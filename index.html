@@ -4,25 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Клуб четырех коней</title>
 </head>
 
 <body>
     <header class="main-header content-wrapper">
-        <h1 class="main-header__title">Клуб четырех коней</h1>
+        <div class="main-header__title-wrapper">
+            <img class="main-header__title-image" src="/image/chess.svg" alt="Шахматная фигура - конь" width="18"
+                height="27">
+            <img class="main-header__title-image" src="/image/chess.svg" alt="Шахматная фигура - конь" width="18"
+                height="27">
+            <img class="main-header__title-image" src="/image/chess.svg" alt="Шахматная фигура - конь" width="18"
+                height="27">
+            <img class="main-header__title-image" src="/image/chess.svg" alt="Шахматная фигура - конь" width="18"
+                height="27">
+            <h1 class="main-header__title">Клуб<br> четырех коней</h1>
+        </div>
         <div class="main-header__wrapper">
-            <p class="main-header__text">Превратите уездный город в столицу земного шара</p>
+            <p class="main-header__text">Превратите уездный город <span style="padding: 0px 25px;">&nbsp;</span>в
+                столицу <span style="padding: 0px 10px;">&nbsp;</span>земного шара</p>
             <p class="main-header__description">Оплатите взнос на телеграммы для организации Международного васюкинского
                 турнира по шахматам</p>
-            <a class="main-header__link main-header__link--first">Поддержать шахматную мысль</a>
-            <a class="main-header__link main-header__link--second">Подробнее о турнире</a>
+            <div class="main-header__link-wrapper">
+                <a class="main-header__link main-header__link--first">Поддержать шахматную мысль</a>
+                <a class="main-header__link main-header__link--second">Подробнее о турнире</a>
+            </div>
         </div>
-        <marquee>Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперёд не только культуру, но и
-            экономику! Лёд тронулся, господа присяжные заседатели!</marquee>
-        <p class="main-header__scroll-text">Дело помощи утопающим — дело рук самих утопающих!</p>
-        <p class="main-header__scroll-text">Шахматы двигают вперёд не только культуру, но и экономику!</p>
-        <p class="main-header__scroll-text">Лёд тронулся, господа присяжные заседатели!</p>
+
     </header>
+
+    <marquee class="ticker">
+        <ul class="ticker__list">
+            <li class="ticker__item">Дело помощи утопающим — дело рук самих утопающих!</li>
+            <li class="ticker__item">Шахматы двигают вперёд не
+                только культуру, но и
+                экономику!</li>
+            <li class="ticker__item">Лёд тронулся, господа присяжные заседатели!</li>
+        </ul>
+    </marquee>
+
     <main class="main-container">
         <section class="tournament-support content-wrapper">
             <h2 class="visually-hidden">Поддержка международного васюкинского турнира</h2>
@@ -30,17 +51,18 @@
                 <img class="tournament-support__image" src="/image/peaple-play-chess__modile.png"
                     alt="Мужчины играют в шахматы" width="335" height="212">
                 посетите лекцию
-                на тему: «Плодотворная дебютная идея»
+                на тему: <span>«Плодотворная дебютная идея»</span>
             </p>
             <!-- <img class="tournament-support__image" src="/image/peaple-play-chess__modile.png"
                 alt="Мужчины играют в шахматы" width="335" height="212"> -->
         </section>
+
         <section class="session-games content-wrapper">
             <h2 class="visually-hidden">Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О. Бендера</h2>
             <img class="session-games__image" src="/image/man-play-chess__mobile.png" alt="Мужчина играет в шахматы"
                 width="335" height="402">
-            <p class="session-games__description">и Сеанс одновременной игры в шахматы на 160 досках гроссмейстера О.
-                Бендера</p>
+            <p class="session-games__description">и Сеанс <span>одновременной игры в шахматы на 160 досках</span>
+                гроссмейстера О. Бендера</p>
             <dl class="session-games__table table">
                 <div class="table__wrapper">
                     <dt class="table__index">Место проведения:</dt>
@@ -50,8 +72,8 @@
                     <dt class="table__index">Дата и время мероприятия:</dt>
                     <dd class="table__value">22 июня 1927 г. в 18:00</dd>
                 </div>
-                <div class="table__wrapper">
-                    <dt class="table__index">Плата за игру:</dt>
+                <div class="table__wrapper table__wrapper--including">
+                    <dt class="table__index table__index--including">Плата за игру:</dt>
                     <dd class="table__value table__value--including">20 коп.</dd>
                 </div>
                 <div class="table__wrapper">
@@ -60,13 +82,13 @@
                 </div>
                 <div class="table__wrapper">
                     <dt class="table__index">Взнос на телеграммы:</dt>
-                    <dd class="table__value">100 руб. 21 руб. 16 коп.</dd>
+                    <dd class="table__value"><span>100 руб.</span> 21 руб. 16 коп.</dd>
                 </div>
             </dl>
             <p class="session-games__legend">По всем вопросам обращаться в администрацию к К. Михельсону</p>
         </section>
 
-        <section class="transformation">
+        <section class="transformation content-wrapper">
             <h2 class="transformation__title">Этапы преображения Васюков</h2>
             <p class="transformation__text">Будущие источники обогащения васюкинцев</p>
             <img class="transformation__image" src="/image/airplane__mobile.png" alt="Старый самолет" width="335"
@@ -128,7 +150,7 @@
             </div>
         </section>
 
-        <section class="participants">
+        <section class="participants content-wrapper">
             <h2 class="participants__title">Участники турнира</h2>
 
             <div class="slideshow-participants">
@@ -181,7 +203,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="main-footer content-wrapper">
         <div>
             <marquee>Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперёд не только культуру, но и
                 экономику! Лёд тронулся, господа присяжные заседатели!</marquee>

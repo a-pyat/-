@@ -1,0 +1,299 @@
+@font-face {
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/merriweather/merriweather-bold.woff2) format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Merriweather', serif;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/merriweather/merriweather-regular.woff2) format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Golos Text', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/golos-text/golostext-bold.woff) format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Golos Text', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	src: url(../fonts/golos-text/golostext-semibold.woff2) format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Golos Text', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	src: url(../fonts/golos-text/golostext-medium.woff2) format('woff2');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Golos Text', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/golos-text/golostext-regular.woff2) format('woff2');
+	font-display: swap;
+}
+
+:root {
+	--content-padding-mobile: 20px;
+	--content-padding-desktop: 40px;
+	--content-width-mobile: (375px - var(--content-padding-mobile) * 2);
+	--content-width-desktop: (1366px - var(--content-padding-desktop) * 2);
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Golos Text', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #313131;
+	background-color: #ffffff;
+	margin: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.content-wrapper {
+	box-sizing: border-box;
+	margin: 0 auto;
+	min-width: 375px;
+	max-width: 1366px;
+	padding-left: var(--content-padding-mobile);
+	padding-right: var(--content-padding-mobile);
+
+	@media (min-width: 1366px) {
+		padding-left: var(--content-padding-desktop);
+		padding-right: var(--content-padding-desktop);
+	}
+}
+
+.main-header {
+	background-image: url('/image/background-image/background-image-header-mobile.png');
+	background-repeat: no-repeat;
+	background-size: ;
+	background-color: #ffffff;
+}
+
+.main-header__title-wrapper {
+	display: flex;
+	padding-top: 20px;
+}
+
+.main-header__title-image {
+	display: block;
+}
+
+.main-header__title {
+	margin: 0;
+	font-family: 'Golos text', sans-serif;
+	font-size: 14px;
+	line-height: 15px;
+	font-weight: 700;
+
+	padding-bottom: 40px;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+.main-header__wrapper {
+}
+
+.main-header__text {
+	font-family: 'Merriweather', serif;
+	font-size: 36px;
+	line-height: 39px;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding-bottom: 24px;
+}
+
+.main-header__description {
+	margin: 0;
+	padding-bottom: 32px;
+}
+
+.main-header__link-wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 14px;
+	padding-bottom: 291px;
+}
+
+.main-header__link {
+	font-family: inherit;
+	font-weight: 500;
+	color: #1f1f1f;
+	background-color: #ffffff;
+	font-size: 16px;
+	line-height: 20px;
+
+	border-radius: 66px;
+	padding: 18px 43px;
+}
+
+.main-header__link--first {
+	background-color: #1f1f1f;
+	color: #ffffff;
+}
+
+.main-header__link--second {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.ticker {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 17px;
+	background-color: #f54932;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 0;
+	margin-bottom: 48px;
+}
+
+.ticker__list {
+	display: flex;
+	gap: 12px;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.ticker__item {
+	margin-left: 12px;
+}
+
+.tournament-support__description {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 37px;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding-bottom: 34px;
+}
+
+.tournament-support__description span {
+	font-weight: 700;
+	color: #f54932;
+}
+
+.tournament-support__image {
+	display: block;
+	padding: 24px 0;
+}
+
+.session-games {
+}
+
+.session-games__image {
+	display: block;
+	padding-bottom: 24px;
+}
+
+.session-games__description {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 37px;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding-bottom: 44px;
+}
+
+.session-games__description span {
+	font-weight: 700;
+	color: #f54932;
+}
+
+.session-games__table {
+	margin: 0;
+	padding: 0;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 40px;
+}
+
+.table__wrapper:nth-child(3) {
+	flex-direction: row;
+}
+
+.table__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 16px 0;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.table__wrapper:first-child {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 0;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+.table__wrapper:last-child {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 0;
+	padding-top: 16px;
+	border: none;
+}
+
+.table__index {
+	opacity: 0.7;
+	margin: 0;
+}
+
+.table__value {
+	font-weight: 600;
+	margin: 0;
+}
+
+.table__value span {
+	text-decoration: line-through #f54932 2px;
+}
+
+.session-games__legend {
+	line-height: 21px;
+	color: #3057a2;
+	margin: 0;
+	padding-bottom: 120px;
+}
