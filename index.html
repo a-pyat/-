@@ -91,10 +91,10 @@
         <section class="transformation content-wrapper">
             <h2 class="transformation__title">Этапы преображения Васюков</h2>
             <p class="transformation__text">Будущие источники обогащения васюкинцев</p>
-            <img class="transformation__image" src="/image/airplane__mobile.png" alt="Старый самолет" width="335"
-                height="182">
 
             <div class="slideshow-stages">
+                <img class="slideshow-stages__image" src="/image/airplane__mobile.png" alt="Старый самолет" width="335"
+                    height="182">
                 <div class="slides-stages fade">
                     <div class="slides-stages__text">
                         <ol class="slides-stages__list">
@@ -139,14 +139,20 @@
                     </div>
                 </div>
 
-                <a class="slideshow-stages__prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="slideshow-stages__next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
-            <div class="slideshow-stages-dot" style="text-align:center">
-                <span class="slideshow-stages-dot__dot" onclick="currentSlide(1)"></span>
+            <div class="slideshow-stages-link">
+                <a class="slideshow-stages-link__prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="slideshow-stages-link__next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="slideshow-stages-dot">
+                <span class="slideshow-stages-dot__dot slideshow-stages-dot__dot--active"
+                    onclick="currentSlide(1)"></span>
                 <span class="slideshow-stages-dot__dot" onclick="currentSlide(2)"></span>
                 <span class="slideshow-stages-dot__dot" onclick="currentSlide(3)"></span>
+                <span class="slideshow-stages-dot__dot" onclick="currentSlide(4)"></span>
+                <span class="slideshow-stages-dot__dot" onclick="currentSlide(5)"></span>
             </div>
         </section>
 
