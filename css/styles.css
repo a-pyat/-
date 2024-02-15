@@ -169,6 +169,7 @@ body {
 }
 
 .ticker {
+	display: block;
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -178,6 +179,10 @@ body {
 	text-transform: uppercase;
 	padding: 0;
 	margin-bottom: 48px;
+}
+
+.ticker--footer {
+	margin-bottom: 0;
 }
 
 .ticker__list {
@@ -295,6 +300,10 @@ body {
 	line-height: 21px;
 	color: #3057a2;
 	margin: 0;
+	padding-bottom: 120px;
+}
+
+.transformation {
 	padding-bottom: 120px;
 }
 
@@ -427,7 +436,7 @@ body {
 	animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@keyframes fade {
 	from {
 		opacity: 0.4;
 	}
@@ -436,11 +445,113 @@ body {
 	}
 }
 
-@keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
+.participants {
+}
+
+.participants__title {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 39px;
+	text-transform: uppercase;
+
+	margin: 0;
+	padding-bottom: 40px;
+}
+
+.slideshow-participants {
+}
+
+.slides-participants {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slides-participants__image {
+	display: block;
+	width: 244px;
+	height: 244px;
+	margin-bottom: 28px;
+}
+
+.slides-participants__name {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.slides-participants__rank {
+	font-size: 20px;
+	line-height: 24px;
+	opacity: 0.6;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.slides-participants__link {
+	font-family: inherit;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration: none;
+	color: #3057a2;
+
+	padding: 12px;
+	border: 1px solid #3057a2;
+	border-radius: 62px;
+	margin-bottom: 40px;
+}
+
+.slides-participants__number {
+	font-size: 16px;
+	line-height: 19px;
+	padding-bottom: 100px;
+}
+
+.slides-participants__number-not-active {
+	opacity: 0.6;
+}
+
+.slides-participants-link {
+	position: relative;
+}
+
+.slides-participants-link__prev,
+.slides-participants-link__next {
+	cursor: pointer;
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	bottom: 93px;
+	color: #ffffff;
+	background-color: #313131;
+	border-radius: 50%;
+	text-align: center;
+	transition: 0.6s ease;
+}
+
+.slides-participants-link__prev {
+	margin-left: 103px;
+}
+
+.slides-participants-link__next {
+	right: 0;
+	margin-right: 103px;
+}
+
+.main-footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-right: 30px;
+	background-color: #e9ded4;
+}
+
+.main-footer__text {
+	font-size: 16px;
+	line-height: 19px;
+	opacity: 0.6;
 }

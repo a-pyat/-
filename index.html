@@ -166,58 +166,66 @@
                     <h3 class="slides-participants__name">Хозе-Рауль Капабланка</h3>
                     <p class="slides-participants__rank">Чемпион мира по шахматам</p>
                     <a class="slides-participants__link" href="#">Подробнее</a>
-                    <div class="slides-participants__number">1 / 6</div>
+                    <div class="slides-participants__number">1<span
+                            class="slides-participants__number-not-active">/6</span></div>
                 </div>
                 <div class="slides-participants">
                     <img class="slides-participants__image" src="/image/player.jpg" alt="" width="244" height="244">
                     <h3 class="slides-participants__name">Эммануил Ласкер</h3>
                     <p class="slides-participants__rank">Чемпион мира по шахматам</p>
                     <a class="slides-participants__link" href="#">Подробнее</a>
-                    <div class="slides-participants__number">2 / 6</div>
+                    <div class="slides-participants__number">2/6</span></div>
                 </div>
                 <div class="slides-participants">
                     <img class="slides-participants__image" src="/image/player.jpg" alt="" width="244" height="244">
                     <h3 class="slides-participants__name">Александр Алехин</h3>
                     <p class="slides-participants__rank">Чемпион мира по шахматам</p>
                     <a class="slides-participants__link" href="#">Подробнее</a>
-                    <div class="slides-participants__number">3 / 6</div>
+                    <div class="slides-participants__number">3/6</div>
                 </div>
                 <div class="slides-participants">
                     <img class="slides-participants__image" src="/image/player.jpg" alt="" width="244" height="244">
                     <h3 class="slides-participants__name">Арон Нимцович</h3>
                     <p class="slides-participants__rank">Чемпион мира по шахматам</p>
                     <a class="slides-participants__link" href="#">Подробнее</a>
-                    <div class="slides-participants__number">4 / 6</div>
+                    <div class="slides-participants__number">4/6</div>
                 </div>
                 <div class="slides-participants">
                     <img class="slides-participants__image" src="/image/player.jpg" alt="" width="244" height="244">
                     <h3 class="slides-participants__name">Рихард Рети</h3>
                     <p class="slides-participants__rank">Чемпион мира по шахматам</p>
                     <a class="slides-participants__link" href="#">Подробнее</a>
-                    <div class="slides-participants__number">5 / 6</div>
+                    <div class="slides-participants__number">5/6</div>
                 </div>
                 <div class="slides-participants">
                     <img class="slides-participants__image" src="/image/player.jpg" alt="" width="244" height="244">
                     <h3 class="slides-participants__name">Остап Бендер</h3>
                     <p class="slides-participants__rank">Чемпион мира по шахматам</p>
                     <a class="slides-participants__link" href="#">Подробнее</a>
-                    <div class="slides-participants__number">6 / 6</div>
+                    <div class="slides-participants__number">6/6</div>
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="slides-participants-link">
+                    <a class="slides-participants-link__prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="slides-participants-link__next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
         </section>
+
+        <marquee class="ticker ticker--footer">
+            <ul class="ticker__list">
+                <li class="ticker__item">Дело помощи утопающим — дело рук самих утопающих!</li>
+                <li class="ticker__item">Шахматы двигают вперёд не
+                    только культуру, но и
+                    экономику!</li>
+                <li class="ticker__item">Лёд тронулся, господа присяжные заседатели!</li>
+            </ul>
+        </marquee>
     </main>
+
     <footer class="main-footer content-wrapper">
-        <div>
-            <marquee>Дело помощи утопающим — дело рук самих утопающих! Шахматы двигают вперёд не только культуру, но и
-                экономику! Лёд тронулся, господа присяжные заседатели!</marquee>
-            <p class="main-header__scroll-text">Дело помощи утопающим — дело рук самих утопающих!</p>
-            <p class="main-header__scroll-text">Шахматы двигают вперёд не только культуру, но и экономику!</p>
-            <p class="main-header__scroll-text">Лёд тронулся, господа присяжные заседатели!</p>
-        </div>
-        <small>Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями
+        <small class="main-footer__text">Все персонажи, события и цитаты являются вымышленными и не принадлежат
+            создателям сайта. С подробностями
             можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</small>
     </footer>
 </body>
